@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+:root{
+    --gray-dark: #343a40;
+    --golden-yellow: #e4aa48;
+    --yellow: #ffc107;
+    --white: #f8f9fa;
+    --deep-gray: #2e2e35;
+    --outside-grey: #333;
+    --off-white: #dadada;
+    --black: #000;
+    --light-grey: #34343b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100px;
+}
+
+/*---------- header ----------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--deep-gray);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header,
+.home,
+.about,
+.skills,
+.tasks,
+.contact {
+    padding: 20px 12% ;
+}
+#open-menu,
+#close-menu{
+    display: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 5px 50px;
+}
+nav ul li a{
+    color: var(--off-white);
+    font-size: 15px;
+}
+.logo{
+    color: var(--off-white);
+}
+.logo span{
+    color: var(--golden-yellow);
+}
+
+    /*--------------- home page  --------------*/
+section #home{
+    height: 92vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--deep-gray);
+    color: var(--off-white);
+}
+.text-right, .text-left{
+    width: 30%;
+    padding-top: 20vh;
+}
+.text-right h2{
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 700;   
+}
+.text-right h2 span{
+    color: var(--golden-yellow);
+}
+
+.line{
+    width: 50px;  
+    border-bottom: 2px solid var(--golden-yellow);
+    padding-top: 30px;
+}
+.space{
+    font-size: .9rem;
+    padding-top: 30px;
+    line-height: 25px;
+}
+.space a{
+    color: var(--off-white);
+}
+.space a:hover{
+    color: var(--golden-yellow);
+}
+.button{
+    margin-top: 60px;
+}
+.button a,
+.about-me .head a {
+    border: 2px solid var(--golden-yellow);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--golden-yellow);
+    font-weight: 700;
+}
+.button a:hover{
+    background-color: var(--golden-yellow);
+    color: var(--black);
+}
+
+/* middle */
+.image img{
+    width: 100%;
+    margin-top: 130px;
+    overflow: hidden;
+} 
+
+    /* left */
+.text-left h4{
+    font-size: 14px;
+    color: var(--golden-yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    padding-bottom: .9em;
+}
+.text-left h2{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700; 
+}
+.text-left p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    color: var(--off-white);
+    padding-top: 12px;
+}
+.button-2{
+    display: flex;
+    padding-top: 20px;
+}
+.text-left a{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--golden-yellow);
+    display: inline-block;
+    cursor: pointer;
+}
+.text-left a iconify-icon[icon='bi:arrow-down-short']{
+    font-size: 1.5rem;
+}
+
+ /*--------------- about page  --------------*/
+#about{
+    padding-top: 120px;
+    background-color: var(--light-grey);
+}
+.about h3,
+.skills h3,
+.tasks h3,
+.contact h3 {
+    text-align: center;
+    font-size: 14px;
+    color: var(--golden-yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+.container-3{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: var(--white);
+}
+.container-3 img{
+    width: 30%;
+    margin-right: 10%;
+    box-shadow: 5px 10px 18px #888888;
+    margin-bottom: 90px; 
+}
+.container-3 .head{
+    padding-top: 10%;
+
+} 
+.container-3 .head h5{
+    padding-bottom: 15px;
+    padding-bottom: 30px;
+}
+.container-3 .head h5 span{
+    border-bottom: 2px solid var(--golden-yellow);
+    padding-bottom: 5px;
+}
+.container-3 .head p{
+    width: 80%;
+    line-height: 2.5em;
+    padding-bottom: 50px;
+}
+.container-3 .head p:nth-child(2){
+    padding-bottom: 30px;
+}
+.about-me .head a:hover{
+    background-color: var(--golden-yellow);
+    color: var(--black);
+}
+
+/*--------------- skills page  --------------*/
+#skills{
+    padding-top: 120px;
+    background-color: var(--deep-gray);
+}
+.skill-text{
+    text-align: center;
+    padding-top: 50px;
+    color: var(--off-white);
+}
+.skill-text p{
+    padding: 20px 0 80px;
+}
+.box{
+    display: flex;
+}
+.icons{
+    width: 25%;
+    margin-left: 10px;
+    height: 30vh;
+    border: 2px solid var(--light-grey);
+    background-color: var(--light-grey);
+    margin-bottom: 200px;
+}
+.box iconify-icon{
+    font-size: 4rem;
+    padding: 40px 0 20px 38%;
+}
+.box h2{
+    text-align: center;
+    color: var(--off-white);
+}
+
+/*--------------- portfolio page --------------*/
+#tasks{
+    padding-top: 120px;
+    background-color: var(--light-grey);
+}
+#tasks h2{
+    text-align: center;
+    padding: 30px 0 60px;
+    color: var(--off-white);
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pix{
+    border: 1px solid var(--deep-gray);
+    background-color: var(--deep-gray);
+    width: 90%
+}
+.pix img{
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+}
+.port, .netflix{
+    margin-bottom: 30px;
+}
+.image-text{
+   color: var(--off-white);
+   padding-bottom: 20px;
+}
+.image-text a{
+    color: var(--golden-yellow);
+    font-size: .8rem;
+}
+
+        /*--------------- contact page --------------*/
+#contact{
+    padding-top: 120px;
+    background-color: var(--deep-gray);
+}
+.contact-text{
+    text-align: center;
+    padding-top: 50px;
+    color: var(--off-white);
+}
+.contact-text p{
+    padding: 20px 0 40px;
+}
+.shapes{
+    display: flex;
+    flex-direction: column;
+}
+.shape-1,
+.shape-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape-2{
+    margin: 40px 0 70px;
+}
+.call{
+    margin: 0px 30px;
+}
+.Twitter{
+    margin: 0 30px;
+}
+.reach{
+    width: 25%;
+    border: 1px solid var(--light-grey);
+    background-color: #36363e;
+    padding: 20px 0;
+}
+.reach iconify-icon{
+    padding: 0 10px;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.reach span{
+    color: var(--golden-yellow);
+    font-size: 18px;
+}
+.arrow{
+    position: relative;
+}
+.arrow a iconify-icon{
+    position: absolute;
+    left: 95%;
+    bottom: 5px;
+    border: 1px solid var(--golden-yellow);
+    padding: 10px;
+    color: var(--golden-yellow);
+}
+.arrow a iconify-icon:hover{
+    background-color: var(--golden-yellow);
+    color: var(--white);
+}
+
+/*--------------- footer page  --------------*/
+footer{
+    border-top: 3px solid var(--golden-yellow);
+    background-color: var(--deep-gray);
+    padding: 20px;
+    text-align: center;
+    color: var(--off-white);
+}
+
+
+/*------------------------ Tablet Screen --------------------------*/
+@media(max-width: 1300px){
+    nav ul li{
+        padding: 5px 30px;
+    }
+    .reach{
+        width: 70%;
+    }
+
+}
+
+/*------------------------ Mobile Screen --------------------------*/
+@media (max-width: 980px){
+    #open-menu,
+    #close-menu{
+        display: revert;
+    }
+    #open-menu{
+        display: block;
+        color: white;
+    }
+    header,
+    .home,
+    .about,
+    .skills,
+    .tasks,
+    .contact {
+        padding: 20px 5%;
+    }
+    header{
+        padding-left: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu {
+        height: 0;
+        margin: 0px 0px 0px 170px;
+        padding: 0 80px ;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        transition: 0.8s ease-in-out;
+      }
+    .menu ul {
+        background-color: var(--white);
+        padding: 20px 35px 0;
+      }
+    .menu ul > li {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        list-style: none;
+        display: block; 
+        padding: 0px;
+    }
+    .menu ul > li:last-child{
+        padding-bottom: 10px;
+    }
+    .menu nav {
+        margin-top: 20px;
+      }
+    .menu nav a {
+        font-size: 1rem;
+        color: var(--black);
+        padding: 0 50px;
+    }
+    .menu #close-menu {
+        position: relative;
+        left: 200px;
+        top: 70px;
+        background-color: var(--golden-yellow);
+        color: var(--white);
+        font-size: 1.3rem;
+        border: none;
+        padding: 3px 5px;
+        border-radius: 50%;
+    }
+    a{
+        text-decoration: none;
+    }
+    section #home{
+        height: 89vh;
+    }
+    .text-right, .text-left{
+        width: 50%;
+    }
+    .text-right h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .space{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    .button{
+        margin-top: 90px;
+    }
+    .button a {
+        padding: 10px 9px;
+    }
+    .image img{
+        margin-left: 17px;
+        margin-top: 160px;
+    } 
+    .text-left,
+    .container-3 img,
+    .container-3 .head h5,
+    .arrow{
+        display: none;
+    } 
+    #about{
+        padding-top: 80px;
+    }
+    .container-3{
+        padding-top: 30px;
+        text-align: center;
+        color: var(--white);
+    }
+    .container-3 .head{
+        padding-top: 10%;
+    
+    } 
+    .container-3 .head p{
+        line-height: 2em;
+        padding-left: 50px;
+    }
+    #skills{
+        padding-top: 100px;
+    }
+    .skill-text{
+        padding-top: 30px;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .icons{
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    .box iconify-icon{
+        padding: 50px 0 20px 38%;
+    }
+    #tasks{
+        padding-top: 100px;
+    }
+    .boxes{
+        flex-direction: column;
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+    .pix{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .pix img{
+        height: 20vh;
+    }
+    .port, .netflix{
+        margin-bottom: 30px;
+    }
+    .image-text{
+       padding-bottom: 20px;
+    }
+    #contact{
+        padding-top: 100px;
+    }
+    .contact-text{
+        padding-top: 30px;
+    }
+    .contact-text p{
+        padding: 10px 0 40px;
+    }
+    .shape-1,
+    .shape-2 {
+        flex-direction: column;
+    }
+    .shape-2{
+        margin: 0px;
+    }
+    .reach{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .reach iconify-icon{
+        padding: 0 20px;
+    }
+    .arrow a iconify-icon{
+        top: 3px;
+    }
+}
